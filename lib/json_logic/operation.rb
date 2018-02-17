@@ -124,7 +124,7 @@ module JSONLogic
     # Determine if values associated with operator need to be re-interpreted for each iteration(ie some kind of iterator)
     # or if values can just be evaluated before passing in.
     def self.is_iterable?(operator)
-      ['filter', 'some', 'all', 'none', 'in', 'map', 'reduce'].any? { |o| o == operator }
+      ['filter', 'some', 'all', 'none', 'map', 'reduce'].any? { |o| o == operator }
     end
 
     def self.add_operation(operator, function)
